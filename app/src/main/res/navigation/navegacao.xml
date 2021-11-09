@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navegacao"
+    app:startDestination="@id/crudFragment">
+    <fragment
+        android:id="@+id/crudFragment"
+        android:name="br.com.fourvrstudios.convidados.View.CrudFragment"
+        android:label="fragment_crud"
+        tools:layout="@layout/fragment_crud" >
+        <action
+            android:id="@+id/action_crudFragment_to_listaFragment"
+            app:destination="@id/listaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/listaFragment"
+        android:name="br.com.fourvrstudios.convidados.View.ListaFragment"
+        android:label="fragment_lista"
+        tools:layout="@layout/fragment_lista" />
+</navigation>
